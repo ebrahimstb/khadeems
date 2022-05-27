@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(148, 23, 250);
+}
+
+.login{
+    height: 250px;
+    width: 25%;
+    margin-left: 450px;
+    top: 150px;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+}
+h2{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 100px;
+}
+label{
+    font-weight: 500;
+
+    display: flex;
+    text-align: centre;
+    font-size: 15px;
+    padding: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 35px;
+    color: rgb(4, 0, 14);
+}
+.mit{
+   background-color: rgb(115, 179, 19); 
+   border: none;
+   padding: 9px;
+   border-radius: 20px;
+   color: white;
+   margin-left: 40px;
+   font-size: 17px;
+}
+.mit:hover{
+    transition: 0.2s ease-in-out;
+    background-color: rgb(8, 1, 29);
+}
+input{
+    width: 70%;
+    margin-left: 35px;
+}
+.agree{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    padding-left: 50px;
+}
