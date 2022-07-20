@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./khadeem.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>khadeem</title>
 </head>
 <body>
     <div class="homepage">
             <nav>
-                <p class="logo">KHADEEMS</p>
+                <p class="logo">ASHRAB</p>
                 <ul class="topmenu">
                     <li>Home</li>
                     <li>About</li>
@@ -23,17 +24,29 @@
         <div class="login">
             <h2 class="su">SIGN UP</h2>
             <form>
-                <label>First name</label><br>
-                <input type="text" placeholder=""><br><br>
-                <label>Last name</label><br>
-                <input type="text" placeholder=""><br><br>
-                <label>Email</label><br>
-                <input type="email" placeholder=""><br><br>
-                <label>Password</label><br>
-                <input type="password" placeholder=""><br><br>
-                <label>Comfirm Password</label><br>
-                <input type="password" placeholder=""><br><br>
+                <section class="st">
+                    <label>First name</label>
+                    <input type="text" placeholder="first name">
+                </section>
+                <section class="st">
+                    <label>Last name</label>
+                    <input type="text" placeholder="last name">
+                </section>
+                <section class="st">
+                <label>Email</label>
+                <input type="email" placeholder="your email" required>
+            </section>
+            <section class="st">
+                <label>Password</label>
+                <input type="password" placeholder="password" required>
+            </section>
+            <section class="st">
+                <label>Comfirm Password</label>
+                <input type="password" placeholder="comfirrm password" required> 
+            </section>
+            <section class="st">  
                 <input type="button" value="submit" class="mit">
+            </section> 
             </form>
             <p class="agree">By clicking the sign up button you gee to our <br>
                 <a href="#">terms and condition</a> and<span class="fool"><a href="#">poilicy privacy</a></span>
@@ -73,22 +86,40 @@
             <div class="img2"> </div>
             <p class="txt2">Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Molestias impedit<br> ut velit quibusdam soluta incidunt<br> aut obcaecati eveniet labore laudantium.</p>
         </div>
-        <div class="line"> </div>
+        <hr class="line">
             <h2 class="off">OFFICE ADDRESS</h2>
             <p class="offp">46 belmont avenue,<br> <br>
                 hickory bustop near blieze store<br> <br>
                 illinois Chicago USA </p><br><br>
             <h2 class="tat">CONTACT</h2>
             <p class="tatp">
-                khadeemoptimalinvestment@gmail.com<br>
-                +2345678912123<br>
-                +1345678901
+                ashrabessential@gmail.com<br>
+                +2348144345484<br>
+                +2349019026672
             </p>
     </div>
         <footer>
-            <!-- <ul>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            </ul> -->
+            <section class="fsec">
+            <ul class="socials">
+                <li>
+                    <a href="https://facebook.com/ebrahimstb" class="icon-facebook">
+                        <span class="tooltip">Facebook</span>
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://github.com/ebrahimstb" class="icon-github">
+                        <span class="tooltip">Github</span>
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://instagram.com/ebrahim_stb" class="icon-instagram">
+                        <span class="tooltip">Instagram</span>
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.link/d3zbhn" class="icon-whatsapp">
+                        <span class="tooltip">Whatsapp</span>
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
                 <ul class="ist">
                     <li>Home</li>
                     <li>About</li>
@@ -96,13 +127,21 @@
                     <li>Contact</li>
                     <li>Location</li>
                 </ul>
-            <DIV class="chrg">
-                <p>TESTIMONIES</p>
-                <p>STORY</p>
-                <p>CHARGE</p>
-                <p>COUNTRY</p>
-                <p>FEEDBACK</p>
-            </DIV>
+                <ul class="chrg">
+                    <li>TESTIMONIES</li>
+                    <li>STORY</li>
+                    <li>CHARGE</li>
+                    <li>COUNTRY</li>
+                    <li>FEEDBACK</li>
+                </ul>
+        </section>
+        <div class="sign-foot">
+            <span class="update">Sign up to be the first to get updates</span>
+            <form action="news letter">
+                <input type="email" placeholder="yor email here">
+                <input type="button" value="submit" class="mit">
+            </form>
+        </div>
         </footer>
 </body>
 </html>

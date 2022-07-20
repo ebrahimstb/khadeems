@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -9,7 +10,7 @@
 }
 
 nav{
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: 50px;
     display: flex;
@@ -21,15 +22,24 @@ nav{
     font-weight: 500;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
 }
-.topmenu{
-    padding: 0px;
-    margin: 0px;
+.homepage .topmenu{
+        list-style-type: none;
+        font-size: 1.2rem;
+
+    /* flex: 1; */
+    /* padding: 0px;
+    margin: 0px; */
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    text-align: left !important;
 }
 .topmenu li{
-    float: left;
+    border-bottom: 5px solid rgb(13, 235, 61);
+    border-bottom-width: 0;
+    font-family: monospace;
     width: 200px;
     height: 40px;
     line-height: 40px;
@@ -37,7 +47,9 @@ nav{
     color: white;
 }
 .topmenu li:hover{
-    background-color: yellowgreen;
+    transition: 0.3s ease-in-out;
+    border-bottom-width: 3px !important;
+    font-size: 1.5rem !important;
 }
 .header{
     color: rgb(2, 9, 68);
@@ -69,10 +81,18 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(63, 22, 212);
     margin-left: 120px;
+    padding-bottom: 20px;
 }
+
+ .st{
+padding-bottom: 1rem;
+}
+
 input{
     width: 70%;
-    margin-left: 35px;
+    margin-left: 40px;
+    outline-color: rgb(63, 22, 212);
+    padding: 0.4rem;
 }
 label{
     display: flex;
@@ -80,7 +100,8 @@ label{
     font-size: 15px;
     padding: auto;
     font-family: sans-serif;
-    margin-left: 35px;
+    font-weight: bold;
+    margin-left: 40px;
 }
 .mit{
     background-color: rgb(13, 235, 61);
@@ -109,8 +130,9 @@ label{
 }
 
 .w{
-    margin-top: 170px;
-    padding-left: 200px;
+    margin-top:70px;
+    margin-bottom: 70px;
+    padding-left: 150px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(12, 12, 88);
 }
@@ -123,6 +145,7 @@ label{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 150px ;
+    flex-wrap: wrap;
 }
 
 .one {
@@ -132,10 +155,15 @@ label{
     height: 300px;
     width: 250px;
     font-size: 30px;
-    box-shadow: 5px 5px 20px rgb(87, 187, 245);
+    box-shadow: 5px 5px 20px rgb(24, 22, 22);
 }
-.two 
-    {
+.one:hover{
+    /* transform: skew(-30deg); */
+    transform: translateY(-17px);
+    transition: 0.3s ease-in-out all;
+}
+
+.two {
     background-image: url(/pictures/rolls1\ \(2\).jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -144,8 +172,13 @@ label{
     font-size: 30px;
     box-shadow: 5px 5px 20px rgb(24, 22, 22);
 }
-.three 
-    {
+.two:hover{
+    /* transform: skew(-30deg); */
+    transform: translateY(-17px);
+    transition: 0.3s ease-in-out all;
+}
+
+.three{
     background-image: url(/pictures/rolls1\ \(3\).jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -154,6 +187,12 @@ label{
     font-size: 30px;
     box-shadow: 5px 5px 20px rgb(24, 22, 22);
 }
+.three:hover{
+    /* transform: skew(-30deg); */
+    transform: translateY(-17px);
+    transition: 0.3s ease-in-out all;
+}
+
 
 .choose{
     height: 600px;
@@ -195,7 +234,7 @@ label{
     background-color: orange;
     height: 80px;
     width: 80px;
-    margin-top: -350px;
+    margin-top: -300px;
     margin-left: 800px;
 }
 
@@ -216,7 +255,7 @@ label{
     background-size: 100%;
     height: 150px;
     width: 150px;
-    margin-left: 200px;
+    margin-left: 198px;
     border-radius: 100px;
 }
 .txt1{
@@ -268,24 +307,174 @@ label{
 footer{
     background-color: teal;
     width: 100%;
-    height: 100px;
+    height: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-footer .ist{
-    list-style-type: none;
+
+.socials{
+    margin-top: -80px;
+}
+
+footer .socials li{
     display: flex;
-    padding: 0px;
-    margin: 0px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.socials li a {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.socials i{
+    color: black;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    display: block;
+    background: white;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0px 5px 5px rgb(11, 10, 28);
+}
+
+.socials .icon:hover span i{
+    color: #fff;
+}
+
+.socials a .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    font-size: 12px;
+    padding: 5px 9px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px rgb(11, 10, 28);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68. -0.55, 0.265, 1.55);
+}
+.socials a:hover .tooltip{
+    top: -40px;
+    opacity: 1;
+    pointer-events: auto;
+    background: #edf0f7;
+}
+
+.socials a .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 7px;
+    background: rgb(255, 254, 254);
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.socials a:hover span,
+.socials a:hover .tooltip{
+    text-shadow: 0px, -1px, 0px rgba(0, 0, 0, 0.4);
+}
+.socials .facebook:hover i,
+.socials .facebook:hover .tooltip,
+.socials .facebook:hover .tooltip:before{
+    background-color: #000000;
+}
+
+
+
+footer .ist{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around !important;
+    margin-left: -400px;
+    float: left;
+    padding-right: 160px;
 }
 footer .ist li{
-    width: 70px;
-    display: block;
+    list-style-type: none;
+    padding-left: 15px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .chrg{
+    margin-right: -1000px;
+    float: left;
     display: flex;
-    align-items: stretch;
+    justify-content: space-around !important;
+    margin-top: 10px;
+    align-items: left !important;
 }
+.chrg li{
+    color: white;
+    list-style-type: none;
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.sign-foot{
+    display: flex;
+    position: absolute;
+    margin-top: 70px;
+    margin-right: 100px;
+    /* text-align: left !important; */
+}
+.sign-foot .update{
+    color: greenyellow;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+
+}
+.sign-foot form{
+
+    border-color: #0b2866;
+    margin-left: -25px;
+}
+.sign-foot input{
+    color: black !important;
+    border-radius: 5px;
+    border: 2px solid white;
+    outline: none;
+    height: 40px;
+    width: 170px;
+    background-color: rgb(255, 255, 255);
+}
+.sign-foot input{
+    /* width: 100px; */
+}
+/* .sign-foot button{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    height: 30px;
+    /* width: 70px; */
+    /* justify-content: center;
+
+} */ */
+
+
+
+
+/*
+@media only screen and (min-width: 768px){
+    .ct-form-newsletter {
+      text-align: left;
+    } */

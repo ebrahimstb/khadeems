@@ -1,24 +1,35 @@
 body{
-    background-color: rgb(148, 23, 250);
+    background-image: url(/pictures/222.jpg);
+    background-repeat: no-repeat;
+    background-color: rgba(8, 3, 32, 0.3);
+    background-blend-mode: darken;
+    object-position: center;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
 }
 
 .login{
-    height: 250px;
-    width: 25%;
-    margin-left: 450px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 300px;
+    width: 350px;
     top: 150px;
     position: relative;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(32px);
     border-radius: 10px;
 }
+
 h2{
-    color: black;
+    font-size: xx-large;
+    color: green;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 100px;
 }
 label{
-    font-weight: 500;
-
+    font-weight: bolder;
     display: flex;
     text-align: centre;
     font-size: 15px;
@@ -35,6 +46,9 @@ label{
    color: white;
    margin-left: 40px;
    font-size: 17px;
+   width: 200px;
+   text-align: center;
+   cursor: pointer;
 }
 .mit:hover{
     transition: 0.2s ease-in-out;
@@ -43,6 +57,10 @@ label{
 input{
     width: 70%;
     margin-left: 35px;
+    border-bottom: 7px solid salmon;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
 }
 .agree{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
